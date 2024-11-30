@@ -1,7 +1,7 @@
 import cv2  
 import numpy as np
 # escadaFacul
-video = cv2.VideoCapture('escalator.mp4')
+video = cv2.VideoCapture('videos_teste/escalator.mp4')
 contador = 0
 liberado = False
 
@@ -39,6 +39,8 @@ while True:
     cv2.rectangle(img, (575,155), (575 + 88, 155 + 85), (255, 255, 255), -1) # quadrado branco para desenhar numero de pessoas contadas
     cv2.putText(img, str(contador), (x+100, y), cv2.FONT_HERSHEY_SIMPLEX, 3, (255, 0, 0), 5) # numero de pessoas contadas
 
+    if cv2.waitKey(5)&0xFF == ord("q"):
+        break
     #print(contador)
     cv2.imshow('video original',img)
     cv2.imshow('video', cv2.resize(imgTh,(600,500)))
