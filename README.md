@@ -26,13 +26,16 @@ model = YOLO("yolov8n.pt")
 
 -> IMPORTANTE: modelo apresenta alguns erros, talvez tentar outra versão do YOLO ou treinar um modelo próprio seria o ideal, utilizando os locais de entrada e saida de alunos.
 
--> Lembrando que podem ver alguns erros de dependencias ao instalar o ultralytics, necessário ter as build tools do C/C++.
+-> Lembrete: enfrentei alguns erros de dependencias ao instalar o ultralytics, descobri que é necessário ter as build tools do C/C++.
 
--> Não foi testado em tempo real, apenas utilizando alguns videos, dentre eles o que subido aqui por ter maior taxa de acerto.
+Link para o problema: https://github.com/ultralytics/ultralytics/issues/14948
+
+-> Lembrete 2: Não foi testado em tempo real, apenas utilizando alguns videos, dentre eles o que subido aqui por ter maior taxa de acerto.
 
 ## Atualizações futuras: 
 
 Melhorar o modelo e aplicação em tempo real.
 
+## Videos 
 
-
+-> Subirei em breve videos de como está sendo feito a análise pelo modelo.
